@@ -49,9 +49,8 @@ The backend API is built using Flask and exposes an endpoint to predict employee
 - **POST /predict**: Predicts whether an employee will leave the company.
 
 #### Request
-
-```json
-{
+    ```json
+    {
   "Age": 35,
   "DailyRate": 800,
   "DistanceFromHome": 10,
@@ -61,13 +60,15 @@ The backend API is built using Flask and exposes an endpoint to predict employee
   "NumCompaniesWorked": 3,
   "TotalWorkingYears": 10,
   "YearsAtCompany": 5
-}
+   }
 
-```json
-{
- "prediction": 1,
- "probability": [0.45, 0.55]
- } 
+### Response
+     ```json
+  {
+  "prediction": 1,
+  "probability": [0.45, 0.55]
+        }
+
 
 ## Frontend
 The frontend is built using HTML, CSS, and Bootstrap. It provides a form for users to input employee data and get predictions.
@@ -81,35 +82,35 @@ The frontend is built using HTML, CSS, and Bootstrap. It provides a form for use
 
 ### Installation
 1. Clone the repository
-```bash
+    ```bash
 git clone https://github.com/deshakil/ProjectEmployeeAttrition.git
 cd <Your-Project-Directory>
 
 2. Create and activate a virtual environment
-```bash
+    ```bash
 python -m venv myenv
 source myenv/bin/activate  # On Windows: myenv\Scripts\activate
 
 3. Install the dependencies
-```bash
+    ```bash
 pip install -r requirements.txt
 
 4. Run the Machine Learning Model API
-```bash
+    ```bash
 python api.py
 
 5. Run the Flask Frontend Application
-```bash
+    ```bash
 python app.py
 
 ### Usage
 
 1. Start the machine learning model API:
-```bash
+   ```bash
 python api.py
 
 2. Start the frontend application :
-```bash
+   ```bash
 python app.py
 
 3. Open a web browser and go to http://localhost:5001.
@@ -118,7 +119,7 @@ python app.py
 
 ### File Structure
 
-```plain text
+    ```plain text
 EmployeeAttritionModelAPI/
 │
 ├── app.py                   # Flask frontend application
