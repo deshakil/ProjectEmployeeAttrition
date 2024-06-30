@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attrition Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Employee Attrition Prediction</h1>
+        <form action="/predict" method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="Age">Age</label>
+                <input type="number" class="form-control" id="Age" name="Age" required>
+            </div>
+            <div class="form-group">
+                <label for="DailyRate">Daily Rate</label>
+                <input type="number" class="form-control" id="DailyRate" name="DailyRate" required>
+            </div>
+            <div class="form-group">
+                <label for="DistanceFromHome">Distance From Home</label>
+                <input type="number" class="form-control" id="DistanceFromHome" name="DistanceFromHome" required>
+            </div>
+            <div class="form-group">
+                <label for="HourlyRate">Hourly Rate</label>
+                <input type="number" class="form-control" id="HourlyRate" name="HourlyRate" required>
+            </div>
+            <div class="form-group">
+                <label for="MonthlyIncome">Monthly Income</label>
+                <input type="number" class="form-control" id="MonthlyIncome" name="MonthlyIncome" required>
+            </div>
+            <div class="form-group">
+                <label for="MonthlyRate">Monthly Rate</label>
+                <input type="number" class="form-control" id="MonthlyRate" name="MonthlyRate" required>
+            </div>
+            <div class="form-group">
+                <label for="NumCompaniesWorked">Number of Companies Worked</label>
+                <input type="number" class="form-control" id="NumCompaniesWorked" name="NumCompaniesWorked" required>
+            </div>
+            <div class="form-group">
+                <label for="TotalWorkingYears">Total Working Years</label>
+                <input type="number" class="form-control" id="TotalWorkingYears" name="TotalWorkingYears" required>
+            </div>
+            <div class="form-group">
+                <label for="YearsAtCompany">Years at Company</label>
+                <input type="number" class="form-control" id="YearsAtCompany" name="YearsAtCompany" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
