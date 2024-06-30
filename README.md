@@ -51,23 +51,23 @@ The backend API is built using Flask and exposes an endpoint to predict employee
 #### Request
     ```json
     {
-  "Age": 35,
-  "DailyRate": 800,
-  "DistanceFromHome": 10,
-  "HourlyRate": 50,
-  "MonthlyIncome": 5000,
-  "MonthlyRate": 20000,
-  "NumCompaniesWorked": 3,
-  "TotalWorkingYears": 10,
-  "YearsAtCompany": 5
-   }
+     "Age": 35,
+     "DailyRate": 800,
+     "DistanceFromHome": 10,
+     "HourlyRate": 50,
+     "MonthlyIncome": 5000,
+     "MonthlyRate": 20000,
+     "NumCompaniesWorked": 3,
+     "TotalWorkingYears": 10,
+     "YearsAtCompany": 5
+    }
 
 ### Response
      ```json
-  {
-  "prediction": 1,
-  "probability": [0.45, 0.55]
-        }
+     {
+      "prediction": 1,
+      "probability": [0.45, 0.55]
+      }
 
 
 ## Frontend
@@ -83,35 +83,35 @@ The frontend is built using HTML, CSS, and Bootstrap. It provides a form for use
 ### Installation
 1. Clone the repository
     ```bash
-git clone https://github.com/deshakil/ProjectEmployeeAttrition.git
-cd <Your-Project-Directory>
+    git clone https://github.com/deshakil/ProjectEmployeeAttrition.git
+    cd <Your-Project-Directory>
 
 2. Create and activate a virtual environment
     ```bash
-python -m venv myenv
-source myenv/bin/activate  # On Windows: myenv\Scripts\activate
+    python -m venv myenv
+    source myenv/bin/activate  # On Windows: myenv\Scripts\activate
 
 3. Install the dependencies
     ```bash
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 4. Run the Machine Learning Model API
     ```bash
-python api.py
+    python api.py
 
 5. Run the Flask Frontend Application
     ```bash
-python app.py
+    python app.py
 
 ### Usage
 
 1. Start the machine learning model API:
    ```bash
-python api.py
+   python api.py
 
 2. Start the frontend application :
    ```bash
-python app.py
+   python app.py
 
 3. Open a web browser and go to http://localhost:5001.
 
@@ -120,18 +120,18 @@ python app.py
 ### File Structure
 
     ```plain text
-EmployeeAttritionModelAPI/
-│
-├── app.py                   # Flask frontend application
-├── api.py                   # Machine learning model API
-├── employee_attrition.pkl   # Trained machine learning model
-├── requirements.txt         # Python dependencies
-├── templates/
-│   ├── index.html           # Home page with input form
-│   ├── result.html          # Result page to display predictions
-│   └── error.html           # Error page for handling errors
-└── static/
-    └── style.css            # Custom CSS for styling the frontend
+    EmployeeAttritionModelAPI/
+    │
+    ├── app.py                   # Flask frontend application
+    ├── api.py                   # Machine learning model API
+    ├── employee_attrition.pkl   # Trained machine learning model
+    ├── requirements.txt         # Python dependencies
+    ├── templates/
+    │   ├── index.html           # Home page with input form
+    │   ├── result.html          # Result page to display predictions
+    │   └── error.html           # Error page for handling errors
+    └── static/
+        └── style.css            # Custom CSS for styling the frontend
 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
