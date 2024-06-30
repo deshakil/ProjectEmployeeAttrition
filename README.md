@@ -5,7 +5,6 @@ This project aims to predict employee attrition using a machine learning model d
 
 - [Project Overview](#project-overview)
 - [Tech Stack](#tech-stack)
-- [Dataset](#dataset)
 - [Model Training](#model-training)
 - [API](#api)
 - [Frontend](#frontend)
@@ -50,24 +49,23 @@ The backend API is built using Flask and exposes an endpoint to predict employee
 
 #### Request
     ```json
-     {
-     "Age": 35,
-     "DailyRate": 800,
-     "DistanceFromHome": 10,
-     "HourlyRate": 50,
-     "MonthlyIncome": 5000,
-     "MonthlyRate": 20000,
-     "NumCompaniesWorked": 3,
-     "TotalWorkingYears": 10,
-     "YearsAtCompany": 5
-       }
-
+    {
+    "Age": 35,
+    "DailyRate": 800,
+    "DistanceFromHome": 10,
+    "HourlyRate": 50,
+    "MonthlyIncome": 5000,
+    "MonthlyRate": 20000,
+    "NumCompaniesWorked": 3,
+    "TotalWorkingYears": 10,
+    "YearsAtCompany": 5
+    }
 ### Response
      ```json
-      {
-      "prediction": 1,
-      "probability": [0.45, 0.55]
-       }
+    {
+    "prediction": 1,
+    "probability": [0.45, 0.55]
+    }
 
 
 ## Frontend
@@ -120,18 +118,18 @@ The frontend is built using HTML, CSS, and Bootstrap. It provides a form for use
 ### File Structure
 
     ```plain text
-     EmployeeAttritionModelAPI/
-     │
-     ├── app.py                   # Flask frontend application
-     ├── api.py                   # Machine learning model API
-     ├── employee_attrition.pkl   # Trained machine learning model
-     ├── requirements.txt         # Python dependencies
-     ├── templates/
-     │   ├── index.html           # Home page with input form
-     │   ├── result.html          # Result page to display predictions
-     │   └── error.html           # Error page for handling errors
-     └── static/
-         └── style.css            # Custom CSS for styling the frontend
+    EmployeeAttritionModelAPI/
+    │
+    ├── app.py                   # Flask frontend application
+    ├── api.py                   # Machine learning model API
+    ├── employee_attrition.pkl   # Trained machine learning model
+    ├── requirements.txt         # Python dependencies
+    ├── templates/
+    │   ├── index.html           # Home page with input form
+    │   ├── result.html          # Result page to display predictions
+    │   └── error.html           # Error page for handling errors
+    └── static/
+        └── style.css            # Custom CSS for styling the frontend
 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
